@@ -11,7 +11,7 @@ public class MakeDataset{
         target.readData(" ");
         for(int i=0; i<target.coords.size();i++){
             Path original_path= Paths.get("../data/converted/image/"+(i+1)+".png");
-            Path dataset_path= Paths.get("../data/datasets/crossing/"+target.coords.get(i)+"/"+(i+1)+".png");
+            Path dataset_path= Paths.get("../data/datasets/road_shape/"+target.coords.get(i)+"/"+(i+1)+".png");
             try{
                 Files.copy(original_path, dataset_path);
             }catch(IOException e){

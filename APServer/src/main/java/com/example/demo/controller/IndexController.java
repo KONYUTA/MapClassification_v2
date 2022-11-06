@@ -21,5 +21,19 @@ public class IndexController {
         return "map";
     }
 
+    @GetMapping(value = {"/tiriixn", ""})
+    public String tiriixn(@RequestParam("x") String x, @RequestParam("y") String y, Model model) {
+        model.addAttribute("x", x);
+        model.addAttribute("y", y);
+        return "tiriixn";
+    }
+
+    @GetMapping(value = {"/center", ""})
+    public String center(@RequestParam("x") String x, @RequestParam("y") String y, Model model) {
+        model.addAttribute("x", x);
+        model.addAttribute("y", y);
+        return "center";
+    }
+
 
 }

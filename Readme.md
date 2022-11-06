@@ -13,7 +13,7 @@
 | Shell:   | zsh            |
 | java:    | version 11 ~   |
 | Python3: |                |
-| go       |                |
+| golang   |                |
 |          |                |
 |          |                |
 
@@ -37,8 +37,8 @@
 
 3. **地図タイル用サーバ(以下Mapサーバ)**
 
-   OSSであるTileServer_GLをDockerで動かす。
 
+   OSSのmbtileserverを用いている。QGISなどで作成したタイルデータを配信できる。
    APサーバからのレスポンスを受け取ったAppはHTML文書内に挿入されたスクリプトを基にMapサーバにアクセスする
 
 ## 3. 使用方法
