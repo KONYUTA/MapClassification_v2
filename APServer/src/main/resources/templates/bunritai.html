@@ -38,7 +38,7 @@
     var y = document.getElementById('y').innerHTML;
     var map = L.map('map').setView([x, y], 16);
 
-    var tiles = L.tileLayer('http://localhost:8000/services/centerwidth2/tiles/{z}/{x}/{y}.png', {
+    var tiles = L.tileLayer('http://localhost:8000/services/bunritai2/tiles/{z}/{x}/{y}.png', {
         maxZoom: 19,
     }).addTo(map);
 

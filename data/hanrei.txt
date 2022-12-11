@@ -1,0 +1,8 @@
+センターラインの画像データの凡例です。
+未設: rnkWidth=0, 幅　0~3m
+黄色: rnkWidth=1, 幅　3~5.5m
+赤色: rnkWidth=2, 幅　5.5~13m
+青色: rnkWidth=3, 幅　13~19.5m
+桃色: rnkWidth=4, 幅　19.5m~
+茶色: rnkWidth=5, 幅　不明
+

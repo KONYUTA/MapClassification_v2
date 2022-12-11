@@ -35,5 +35,19 @@ public class IndexController {
         return "center";
     }
 
+    @GetMapping(value = {"/line", ""})
+    public String line(@RequestParam("x") String x, @RequestParam("y") String y, Model model) {
+        model.addAttribute("x", x);
+        model.addAttribute("y", y);
+        return "line";
+    }
+
+    @GetMapping(value = {"/bunritai", ""})
+    public String bunritai(@RequestParam("x") String x, @RequestParam("y") String y, Model model) {
+        model.addAttribute("x", x);
+        model.addAttribute("y", y);
+        return "bunritai";
+    }
+
 
 }

@@ -1,11 +1,11 @@
 #!/bin/zsh
-ps |grep run.sh|awk '{print $1}'|while read num;do
-	kill ${num} > /dev/null 2>&1
+ps ax |grep run.sh|awk '{print $1}'|while read num;do
+	kill ${num} 2> /dev/null
 done
-ps |grep spring|awk '{print $1}'|while read num;do
-	kill ${num} > /dev/null 2>&1
+ps ax |grep spring|awk '{print $1}'|while read num;do
+	kill ${num} 2> /dev/null
 done
-ps |grep mbtile|awk '{print $1}'|while read num;do
-	kill ${num} > /dev/null 2>&1
+ps ax |grep mbtile|awk '{print $1}'|while read num;do
+	kill ${num} 2> /dev/null
 done
 echo '\n\n\nサーバーが終了しましたよ(´･ω･`)\n'
